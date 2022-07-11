@@ -3,7 +3,7 @@
 // Entscheidungsstrukturen | control flow
 
 //Deklaration + Assignment
-const ageJohn = 30;
+const ageJohn = 35;
 const ageMark = 30;
 
 //Deklaration
@@ -27,11 +27,41 @@ isJohnEqual = (ageJohn == ageMark);
 //if(true)
 //if(false)
 //if(isJohnOlder)
-if(ageJohn > ageMark)
-{
-     console.log("John is älter!");
-}
+//if(ageJohn > ageMark)
+//{
+   //  console.log("John is älter!");
+//}
 
 //*******************  IF - ELSE   ****************** */
 // mit Alternative
 // entweder JA oder Nein
+
+//if (isJohnOlder)
+ //{
+    //console.log("John is älter!"); 
+//} 
+//else 
+//{
+   // console.log("John is Jünger!"); 
+//}
+
+/************  Ternäre (ternary) Schreibweise ************/
+ //console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+
+ /************  IF - ELSE - IF ************/
+ //Mit alternativen Fällen (älter, jünger, gleich alt)
+
+ if (isJohnOlder)                    // 1. variante
+ {
+    console.log("John is älter!"); 
+}  
+else if (isJohnEqual)                 //2. Fall     
+ {
+    console.log("John is gleich alt!"); 
+}                                    //evt. weitere alternative (n) else if(){}
+else                                // Gemeinsame else-zweig
+{
+    console.log("John is Jünger!"); 
+}
+
+/************  Fallunterscheidung / SWITCH | CASE ************/
